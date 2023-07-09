@@ -13,6 +13,8 @@
 //     // ...
 //   ],
 // }
+  
+
 
 function scrollPageUp(element){
   element.scrollIntoView()
@@ -50,60 +52,60 @@ function showPopups (popupId, text, name){
 
   
 
-  fetch('../data/contributoryFund.json')
+  fetch('/admin/data/contributoryFund.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameAlum').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum').forEach((el, i) => {
-      el.innerHTML = d[i].amount;
-    });
-    document.querySelectorAll('.textAlum').forEach((el, i) => {
-      el.innerHTML = d[i].purpose??`${d[i].name} donated ${d[i].amount} towards the University's Contributory Fund`;
-    });
+    // document.querySelectorAll('.imageAlum').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameAlum').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum').forEach((el, i) => {
+    //   el.innerHTML = d[i].amount;
+    // });
+    // document.querySelectorAll('.textAlum').forEach((el, i) => {
+    //   el.innerHTML = d[i].purpose??`${d[i].name} donated ${d[i].amount} towards the University's Contributory Fund`;
+    // });
 
     initCarousel();
   });
 
 
-  fetch('../data/ScholarshipsAndMedals.json')
+  fetch('admin/data/ScholarshipsAndMedals.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageScholarshipAndMedal').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameScholarshipAndMedal').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classScholarshipAndMedal').forEach((el, i) => {
-      el.innerHTML = d[i].amount;
-    });
-    document.querySelectorAll('.textScholarshipAndMedal').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].criteria_for_scholarship);
-    });
+    // document.querySelectorAll('.imageScholarshipAndMedal').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameScholarshipAndMedal').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classScholarshipAndMedal').forEach((el, i) => {
+    //   el.innerHTML = d[i].amount;
+    // });
+    // document.querySelectorAll('.textScholarshipAndMedal').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].criteria_for_scholarship);
+    // });
 
     initCarouselScholarship();
   });
 
-  fetch('../data/alumnicarousel.json')
+  fetch('../data/corpusFund.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageCorpus').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameCorpus').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classCorpus').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textCorpus').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageCorpus').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameCorpus').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classCorpus').forEach((el, i) => {
+    //   el.innerHTML = d[i].amount;
+    // });
+    // // document.querySelectorAll('.textCorpus').forEach((el, i) => {
+    // //   el.innerHTML = truncateText(d[i].text);
+    // // });
 
     initCarouselCorpus();
   });
@@ -135,7 +137,7 @@ function initCarousel() {
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 20,
+        spaceBetween: 30,
         slidesPerGroup: 1,
       },
     },
@@ -243,23 +245,23 @@ function initCarouselCorpus() {
 }
 
 
-fetch('../data/alumnicarousel.json')
+fetch('admin/data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum-1').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-      // el.onerror = function(){ el.src =`../public/img/alumni and donor photos/${d[i].name}.png`}
-      // el.onerror = function(){ el.src =`../public/img/blank-profile-picture.png`}
-    });
-    document.querySelectorAll('.nameAlum-1').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum-1').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum-1').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageAlum-1').forEach((el, i) => {
+    //   el.src = d[i].image;
+    //   // el.onerror = function(){ el.src =`../public/img/alumni and donor photos/${d[i].name}.png`}
+    //   // el.onerror = function(){ el.src =`../public/img/blank-profile-picture.png`}
+    // });
+    // document.querySelectorAll('.nameAlum-1').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum-1').forEach((el, i) => {
+    //   el.innerHTML = d[i].class;
+    // });
+    // document.querySelectorAll('.textAlum-1').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselAlumni1();
   });
@@ -291,7 +293,7 @@ fetch('../data/alumnicarousel.json')
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 20,
+          spaceBetween: 30,
           slidesPerGroup: 1,
         },
       },
@@ -309,21 +311,21 @@ fetch('../data/alumnicarousel.json')
   
   }
 
-  fetch('../data/businessAlumni.json')
+  fetch('admin/data/businessAlumni.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum-2').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameAlum-2').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum-2').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum-2').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageAlum-2').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameAlum-2').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum-2').forEach((el, i) => {
+    //   el.innerHTML = d[i].class;
+    // });
+    // document.querySelectorAll('.textAlum-2').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselAlumni2();
   });
@@ -372,21 +374,21 @@ fetch('../data/alumnicarousel.json')
   
   }
 
-  fetch('../data/scienceAndTechnologyAlumni.json')
+  fetch('admin/data/scienceAndTechnologyAlumni.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum-3').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameAlum-3').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum-3').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum-3').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageAlum-3').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameAlum-3').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum-3').forEach((el, i) => {
+    //   el.innerHTML = d[i].class;
+    // });
+    // document.querySelectorAll('.textAlum-3').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselAlumni3();
   });
@@ -436,21 +438,21 @@ fetch('../data/alumnicarousel.json')
   
   }
 
-  fetch('../data/civilServiceAlumni.json')
+  fetch('admin/data/civilServiceAlumni.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum-4').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameAlum-4').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum-4').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum-4').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageAlum-4').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameAlum-4').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum-4').forEach((el, i) => {
+    //   el.innerHTML = d[i].class;
+    // });
+    // document.querySelectorAll('.textAlum-4').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselAlumni4();
   });
@@ -501,21 +503,21 @@ fetch('../data/alumnicarousel.json')
   }
 
 
-  fetch('../data/artsAndEntertainmentAlumni.json')
+  fetch('admin/data/artsAndEntertainmentAlumni.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum-5').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
-    });
-    document.querySelectorAll('.nameAlum-5').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum-5').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum-5').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.imageAlum-5').forEach((el, i) => {
+    //   el.src = d[i].image;
+    // });
+    // document.querySelectorAll('.nameAlum-5').forEach((el, i) => {
+    //   el.innerHTML = d[i].name;
+    // });
+    // document.querySelectorAll('.classAlum-5').forEach((el, i) => {
+    //   el.innerHTML = d[i].class;
+    // });
+    // document.querySelectorAll('.textAlum-5').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselAlumni5();
   });

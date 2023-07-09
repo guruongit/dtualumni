@@ -23,12 +23,12 @@
 
 <nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <a href="/" class="flex items-center">
+      <a href="/dtualumni" class="flex items-center">
 
-        <span class="flex gap-2 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap "><span><img class="h-10 w-10" src="./public/img/dtu-logo.png" alt=""></span>Alumni Affairs</span>
+        <span class="flex gap-2 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap "><span><img class="h-10 w-10" src="./pages/public/img/dtu-logo.png" alt=""></span>Alumni Affairs</span>
       </a>
       <div class="flex md:order-2">
-       <a href="/pages/whydonate.html"><button type="button"
+       <a href="./pages/whydonate.html"><button type="button"
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
         <button data-collapse-toggle="navbar-cta" type="button"
           class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
@@ -55,34 +55,35 @@
             <a href="./pages/about-us.html" class="mr-4 hover:underline md:mr-3">About</a>
           </li>
           <li>
-            <a href="./pages/notable-alumni.html" class="mr-4 hover:underline md:mr-3">Notable Alumni</a>
+            <a href="./pages/notable-alumni.php" class="mr-4 hover:underline md:mr-3">Notable Alumni</a>
           </li>
           <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-auto mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:uselessclassbg-gray-700 dark:uselessclassdivide-gray-600">
-                <ul class="py-2 text-sm dark:uselessclasstext-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="./pages/donorsWall.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donor Wall</a>
-                  </li>
-                  <li>
-                    <a href="./pages/whydonate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Why Donate?</a>
-                  </li>
-                  <li>
-                    <a href="./pages/donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donate Now</a>
-                  </li>
-                </ul>
-                <!-- <div class="py-1">
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasstext-gray-400 dark:uselessclasshover:text-white">Sign out</a>
-                </div> -->
-            </div>
-        </li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-auto mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:uselessclassbg-gray-700 dark:uselessclassdivide-gray-600">
+                  <ul class="py-2 text-sm dark:uselessclasstext-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./pages/donorsWall.php" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donor Wall</a>
+                    </li>
+                    <li>
+                      <a href="./pages/whydonate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Why Donate?</a>
+                    </li>
+                    <li>
+                      <a href="./pages/donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donate Now</a>
+                    </li>
+                  </ul>
+                  <!-- <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasstext-gray-400 dark:uselessclasshover:text-white">Sign out</a>
+                  </div> -->
+              </div>
+          </li>
         <li>
           <a href="./pages/memories.php" class="mr-4 hover:underline md:mr-3 ">Memories</a>
         </li>
         <li>
-          <a href="#Events" class="mr-4 hover:underline md:mr-3">Events</a>
+          <a href="/dtualumni/index.php#Events" class="mr-4 hover:underline md:mr-3">Events</a>
         </li>
+       
           <li>
             <a href="./pages/initiatives.html" class="mr-4 hover:underline md:mr-3">Alumni Initiatives</a>
           </li>
@@ -155,7 +156,7 @@
 
                             
                       }
-                     // echo '<script src="./script.js" >initCarousel1();</script>';
+                      
                      
                     }
                     else{
@@ -219,13 +220,16 @@
               if(file_exists('pages/admin/data/donations.json')){
                 $current_data = file_get_contents('pages/admin/data/donations.json');
                 $array_data = json_decode($current_data, true);
+                $func = "'side-popup-alumni'";
                 //echo "1";
                 for($i = 0; $i<count($array_data);$i++){
+                  $get = "'".$array_data[$i]['info']."'";
+                  $get1 = "'".$array_data[$i]['title']."'";
                 // echo $i;
                   //$get = "".$array_data[$i]['image'];
                   //echo '<h1>'.$array_data[$i]['title'].'</h1>';
                   echo '<li>
-                  <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">'.
+                  <a onclick="showPopups('.$func.', '.$get.', '.$get1.')" class="cursor-pointer block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">'.
                   $array_data[$i]['title'].'<p class="text-white font-[350]">'.$array_data[$i]['date'].'</p>
                   </a>
                 </li>';
@@ -248,13 +252,17 @@
               if(file_exists('pages/admin/data/news.json')){
                 $current_data = file_get_contents('pages/admin/data/news.json');
                 $array_data = json_decode($current_data, true);
+                $func = "'side-popup-alumni'";
+                
                 //echo "1";
                 for($i = 0; $i<count($array_data);$i++){
+                  $get = "'".$array_data[$i]['info']."'";
+                  $get1 = "'".$array_data[$i]['title']."'";
                 // echo $i;
                   //$get = "".$array_data[$i]['image'];
                   //echo '<h1>'.$array_data[$i]['title'].'</h1>';
                   echo '<li>
-                  <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">'.
+                  <a onclick="showPopups('.$func.', '.$get.', '.$get1.')" class="cursor-pointer block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">'.
                   $array_data[$i]['title'].'<p class="text-white font-[350]">'.$array_data[$i]['date'].'</p>
                   </a>
                 </li>';
@@ -290,7 +298,7 @@
                     $make = "'side-popup-alumni'";
                       for($i = 0; $i<count($array_data);$i++){
                       // echo $i;
-                        $get = '"./public/img/alumni and donor photos/'.$array_data[$i]['name'].'.jpg"';
+                        $get = '"'.$array_data[$i]['image'].'"';
                         $def = "'./public/img/blank-profile-picture.png'";
                         //echo $def;
                         //echo $get;
@@ -450,12 +458,12 @@
                                   '.$array_data[$i]['date'].'
                                 </p>
                                 <div class="inline-flex items-center md:hidden">
-                        <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-red-400">past</span>
+                        <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-red-400"><a href="'.$array_data[$i]['link'].'">Past/Info</a></span>
                       </div>
                     </div>
                   </div>
                  <div class="items-center hidden md:inline-flex">
-                  <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-red-400">past</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-red-400"><a href="'.$array_data[$i]['link'].'">Past/Info</a></span>
                 </div>
                </div>
                
@@ -481,12 +489,12 @@
                                   '.$array_data[$i]['date'].'
                                 </p>
                                 <div class="inline-flex items-center md:hidden">
-                                  <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-green-600">Upcoming</span>
+                                  <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-green-600"><a href="'.$array_data[$i]['link'].'">Register/Info</a></span>
                                 </div>
                               </div>
                             </div>
                             <div class="items-center hidden md:inline-flex">
-                              <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-green-600">Upcoming</span>
+                              <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-green-600"><a href="'.$array_data[$i]['link'].'">Register/Info</a></span>
                             </div>
                           </div>
                               
@@ -523,7 +531,7 @@
         <div class="p-4 md:w-[30%] border rounded hover:shadow-lg cursor-pointer flex flex-wrap" onclick="window.location='/pages/notable-alumni.html'">
           <div class="w-4/5 inline-block mx-auto">
             <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
-              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/connect.jpg"
+              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="./pages/public/img/homecoming.png"
                 alt="joinus">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
 
@@ -538,7 +546,7 @@
         <div class="p-4 md:w-[30%] flex flex-wrap border rounded hover:shadow-lg cursor-pointer" onclick="window.location='/pages/whydonate.html'">
           <div class="w-4/5 inline-block mx-auto">
             <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
-              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/donation.jpg"
+              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="./pages/public/img/donation.jpg"
                 alt="donate">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
 
@@ -554,7 +562,7 @@
         <div class="p-4 md:w-[30%] flex flex-wrap border rounded hover:shadow-lg cursor-pointer" onclick="window.location='/pages/mentorship-main.html'">
           <div class="w-4/5 inline-block mx-auto">
             <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
-              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/mentor.jpg"
+              <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="./pages/public/img/mentor.jpg"
                 alt="mentor">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
 
@@ -581,24 +589,24 @@
         <ul
           class="flex justify-center text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
           <li>
-            <a href="#donate" class="mr-4 hover:underline md:mr-6 ">Donate</a>
+            <a href="./pages/donate.html" class="mr-4 hover:underline md:mr-6 ">Donate</a>
           </li>
           <li>
-            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
+            <a href="./pages/notable-alumni.php" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
           </li>
           <li>
-            <a href="#About" class="mr-4 hover:underline md:mr-6">About</a>
+            <a href="./pages/about-us.html" class="mr-4 hover:underline md:mr-6">About</a>
           </li>
           <li>
-            <a href="#Services" class="mr-4 hover:underline md:mr-6">Services</a>
+            <a href="./pages/initiatives.html" class="mr-4 hover:underline md:mr-6">Initiatives</a>
           </li>
 
           <li>
-            <a href="#Events" class="hover:underline">Events</a>
+            <a href="/dtualumni/index.php#Events" class="hover:underline">Events</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#Mentorship" class="mr-4 hover:underline md:mr-6 ">Mentorship</a>
-          </li>
+          </li> -->
 
         </ul>
 

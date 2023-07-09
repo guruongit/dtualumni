@@ -1,5 +1,7 @@
 <?php
 
+
+
 if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != ''){
 	
 	if(file_exists('data/news.json')){
