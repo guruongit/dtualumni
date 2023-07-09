@@ -21,7 +21,7 @@
 
 <nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <a href="/dtualumni" class="flex items-center">
+      <a href="/" class="flex items-center">
 
         <span class="flex gap-2 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap "><span><img class="h-10 w-10" src="./public/img/dtu-logo.png" alt=""></span>Alumni Affairs</span>
       </a>
