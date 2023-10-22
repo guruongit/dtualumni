@@ -533,10 +533,12 @@
             <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
               <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="./pages/public/img/homecoming.png"
                 alt="joinus">
-              <div class="bg-[#65350f] mx-4 relative bottom-6">
-
+                <a href="./pages/registerAlumni.html">
+                <div class="bg-[#65350f] mx-4 relative bottom-6">
                 <h1 class="title-font text-white text-2xl p-5 text-center font-medium mb-3">Join Us</h1>
               </div>
+                </a>
+              
               <p class="leading-relaxed mb-3">Become a part of the highly esteemed and prestigious alumni network</p>
 
             </div>
@@ -674,7 +676,7 @@
 }
 news('news');
   </script>
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
   
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>

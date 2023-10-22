@@ -183,7 +183,7 @@
         <table width="100%" cellpadding="10px">
           
         <tr>
-            <td><label for="cat">Choose Memories Cataagory:</label></td>
+            <td><label for="cat">Choose Search Category:</label></td>
             <td>
             <input type="select"/>
               <select id="cat" name="cat">

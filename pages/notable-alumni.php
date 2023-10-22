@@ -174,7 +174,7 @@ section{
                                   <div class="flex-shrink-0 relative alumni cursor-pointer" 
                                   onclick="showPopups('.$make.', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)" 
                                   >
-                                    <img class="h-[40vh] w-full object-cover imageAlum-1"
+                                    <img class="h-[33vh] w-full object-cover imageAlum-1"
                                       src='.$get.'
                                       onerror="this.src='.$def.'" alt="">
                                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
