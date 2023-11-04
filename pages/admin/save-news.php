@@ -2,7 +2,7 @@
 
 
 
-if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != ''){
+if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != '' && $_POST['info'] != ''){
 	
 	if(file_exists('data/news.json')){
 
@@ -17,7 +17,9 @@ if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != ''){
 		$new_data = array(
 								'title' => $_POST['title'],
 								'date' => $_POST['date'],
-								'serial' => $_POST['serial']
+								'serial' => $_POST['serial'],
+								'info' => $_POST['info']
+								
 							);
 		
 

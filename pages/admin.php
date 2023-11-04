@@ -261,6 +261,7 @@
             echo '<li>'."Serial-> ".$array_data[$i]['serial'].'</li>';
             echo '<li>'."Title-> ".$array_data[$i]['title'].'</li>';
             echo '<li>'."Date-> ".$array_data[$i]['date'].'</li>';
+            echo '<li>'."Details-> ".$array_data[$i]['info'].'</li>';
             echo '</ul>';
             echo '<hr>';
           }
@@ -294,6 +295,12 @@
             <td><label>Serial</label></td>
             <td>
               <input  class ="border-black border rounded-lg" type="text" name="serial" autocomplete="off" />   
+            </td>
+          </tr>
+          <tr>
+            <td><label>Info</label></td>
+            <td>
+              <input  class ="border-black border rounded-lg" type="text" name="info" autocomplete="off" />   
             </td>
           </tr>
           <tr>
@@ -375,6 +382,7 @@
             echo '<li>'."Serial-> ".$array_data[$i]['serial'].'</li>';
             echo '<li>'."Title-> ".$array_data[$i]['title'].'</li>';
             echo '<li>'."Date-> ".$array_data[$i]['date'].'</li>';
+            echo '<li>'."Details-> ".$array_data[$i]['info'].'</li>';
             echo '</ul>';
             echo '<hr>';
           }
@@ -408,6 +416,12 @@
             <td><label>Serial</label></td>
             <td>
               <input  class ="border-black border rounded-lg" type="text" name="serial" autocomplete="off" />   
+            </td>
+          </tr>
+          <tr>
+            <td><label>Info</label></td>
+            <td>
+              <input  class ="border-black border rounded-lg" type="text" name="info" autocomplete="off" />   
             </td>
           </tr>
           <tr>

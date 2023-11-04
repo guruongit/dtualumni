@@ -1,6 +1,6 @@
 <?php
 
-if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != ''){
+if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != '' && $_POST['info'] != ''){
 	
 	if(file_exists('data/donations.json')){
 
@@ -9,13 +9,14 @@ if($_POST['title'] != '' && $_POST['date'] != '' && $_POST['serial'] != ''){
 		if($array_data==NULL){ $lenj = 0;}
 		else{$lenj = count($array_data) -1;}
 		
-		$news = $_POST['serial'];
+		$news = $_POST['serial']; // new naya
 		
 		
 		$new_data = array(
 								'title' => $_POST['title'],
 								'date' => $_POST['date'],
-								'serial' => $_POST['serial']
+								'serial' => $_POST['serial'],
+								'info' => $_POST['info']
 							);
 		
 
